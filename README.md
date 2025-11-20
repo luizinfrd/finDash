@@ -6,6 +6,8 @@
 ![Status](https://img.shields.io/badge/Status-MVP-orange)
 
 > Transforme extratos bancários confusos em dashboards visuais e insights claros em segundos.
+> Clique no link e confira!
+> https://findash-rwz9.streamlit.app/
 
 ---
 
