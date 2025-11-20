@@ -79,8 +79,8 @@ Siga os passos abaixo para rodar o FinDash na sua máquina local:
 
 ---
 
-5.  **Padronização dos arquivos**
-    Você selecionar seu arquivo, mas verifique se ele está no padrão recomendado.
+6.  **Padronização dos arquivos**
+    Você pode selecionar seu arquivo, mas verifique se ele está no padrão recomendado.
     Utilize o arquivo "extratoExemplo.csv" para entender o padrão aceito ou utilize o
     arquivo "extrato_anual.csv" para um exemplo robusto do dashboard.
 
