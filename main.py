@@ -48,7 +48,7 @@ def processar_dados(df: pd.DataFrame):
 # --- APLICAÇÃO PRINCIPAL (A Interface) ---
 
 def main():
-    st.title("💰 Organizador de Finanças Pessoais")
+    st.title("Seja bem vindo ao FinDash, o seu Organizador de Finanças Pessoais! 💰")
     st.markdown("Faça o upload do seu extrato e tenha uma visão clara das suas finanças.")
 
     # 1. Upload do Arquivo
@@ -102,4 +102,5 @@ def main():
             st.error(f"Ops! Ocorreu um erro ao processar o arquivo: {e}")
 
 if __name__ == "__main__":
+
     main()
