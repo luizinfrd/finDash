@@ -11,8 +11,8 @@
 
 ## 📸 Demonstração
 
-![Screenshot do Projeto]([INSIRA_AQUI_O_LINK_DA_IMAGEM_OU_CAMINHO_LOCAL])
-*(Substitua isso por um print da tela do seu projeto rodando!)*
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/83070b92-4f7e-4f92-b574-b6285971d01d" />
+
 
 ## 🎯 Sobre o Projeto
 
@@ -49,8 +49,8 @@ Siga os passos abaixo para rodar o FinDash na sua máquina local:
 
 1.  **Clone o repositório**
     ```bash
-    git clone [https://github.com/](https://github.com/)[SEU_USUARIO]/[NOME_DO_REPOSITORIO].git
-    cd [NOME_DO_REPOSITORIO]
+    git clone https://github.com/luizinfrd/finDash.git
+    cd finDash
     ```
 
 2.  **Crie um ambiente virtual (Recomendado)**
@@ -78,3 +78,9 @@ Siga os passos abaixo para rodar o FinDash na sua máquina local:
     O Streamlit abrirá automaticamente o link (geralmente `http://localhost:8501`).
 
 ---
+
+5.  **Padronização dos arquivos**
+    Você selecionar seu arquivo, mas verifique se ele está no padrão recomendado.
+    Utilize o arquivo "extratoExemplo.csv" para entender o padrão aceito ou utilize o
+    arquivo "extrato_anual.csv" para um exemplo robusto do dashboard.
+
