@@ -84,3 +84,9 @@ Siga os passos abaixo para rodar o FinDash na sua máquina local:
     Utilize o arquivo "extratoExemplo.csv" para entender o padrão aceito ou utilize o
     arquivo "extrato_anual.csv" para um exemplo robusto do dashboard.
 
+
+## 🔮 Próximos Passos (Roadmap)
+
+* [ ] Adicionar filtro por data (mês/ano).
+* [ ] Permitir que o usuário edite categorias manualmente na tela.
+* [ ] Exportar o relatório final em PDF ou Excel.
