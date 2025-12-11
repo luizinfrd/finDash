@@ -48,7 +48,7 @@ def processar_dados(df: pd.DataFrame):
 # --- APLICAÇÃO PRINCIPAL (A Interface) ---
 
 def main():
-    st.title("Seja bem vindo ao FinDash, o seu Organizador de Finanças Pessoais! 💰")
+    st.title("Seja bem vindo ao FinDash, o seu organizador de Finanças Pessoais 💰")
     st.markdown("Faça o upload do seu extrato e tenha uma visão clara das suas finanças.")
 
     # 1. Upload do Arquivo
@@ -58,6 +58,28 @@ def main():
         try:
             # Leitura dos dados
             df_bruto = pd.read_csv(arquivo_upload)
+            
+            # Converter coluna Data para datetime (Essencial para o filtro funcionar)
+            df_bruto['Data'] = pd.to_datetime(df_bruto['Data'], dayfirst=True, errors='coerce')
+            
+            # Filtro de Data na Sidebar
+            st.sidebar.header("Filtros")
+            if not df_bruto['Data'].isnull().all():
+                min_date = df_bruto['Data'].min()
+                max_date = df_bruto['Data'].max()
+                
+                periodo = st.sidebar.date_input(
+                    "Selecione o Período",
+                    value=(min_date, max_date),
+                    min_value=min_date,
+                    max_value=max_date
+                )
+                
+                if len(periodo) == 2:
+                    df_bruto = df_bruto[
+                        (df_bruto['Data'].dt.date >= periodo[0]) & #dt é uma palavra reservada do pandas.
+                        (df_bruto['Data'].dt.date <= periodo[1])
+                    ]
             
             # Exibição prévia (opcional, dentro de um expander para limpar a tela)
             with st.expander("🔍 Visualizar dados brutos"):
